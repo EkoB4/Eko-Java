@@ -1,0 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author ekocan
+ */
+ 
+public class Animal {
+    static void mystaticMethod(){//Static Method 
+        System.out.println("Statik yöntemlerde nesne olmadan çağrılabilir");
+}
+    public static void mypublicvoidMethod(){//Public method
+        System.out.println("Genel yöntemler, nesneler oluşturarak çağrılmalıdır");
+}
+    public static void main(String[]args){//Yazdığımız koda "public static void "dediğimizde hem static hem public'i çağrabiliyoruz.Eğer public'i silersek public çağırdığızda hata verir 
+        Animal myObj = new Animal();//Class ismini myObj verdik
+        mystaticMethod();//static void'i çağırdık
+        myObj.mypublicvoidMethod();//myObj veya animal yazabiliriz
+    }
+}
